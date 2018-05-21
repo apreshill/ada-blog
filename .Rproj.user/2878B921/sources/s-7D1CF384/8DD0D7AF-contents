@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://boring-volhard-12162b.netlify.com/"
 theme = "cocoa-eh-hugo-theme"
 builddrafts = true
 canonifyurls = true

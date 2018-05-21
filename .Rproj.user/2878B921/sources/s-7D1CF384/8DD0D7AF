@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2426003440",
+    "hash" : "3847856747",
     "id" : "8DD0D7AF",
-    "lastKnownWriteTime" : 1526942436,
-    "last_content_update" : 1526942436133,
+    "lastKnownWriteTime" : 1526942822,
+    "last_content_update" : 1526942822155,
     "path" : "~/Documents/Projects/r-projects/ada-blog/config.toml",
     "project_path" : "config.toml",
     "properties" : {
-        "cursorPosition" : "13,18",
+        "cursorPosition" : "0,52",
         "scrollLine" : "0"
     },
     "relative_order" : 1,
