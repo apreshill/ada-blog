@@ -7,7 +7,7 @@ tags: ["R Markdown", "plot", "regression"]
 ---
 
 ```{r}
-knitr::include_url("slides/slides.html")
+knitr::include_url("../../slides/slides.html")
 ```
 
 # R Markdown

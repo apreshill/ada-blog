@@ -57,7 +57,7 @@ A Hollywood-funded film version, produced and filmed in the UK, was released in 
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/blog/hello-r-markdown/</guid>
-      <description>knitr::include_url(&amp;quot;slides/slides.html&amp;quot;)  R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+      <description>knitr::include_url(&amp;quot;../../slides/slides.html&amp;quot;)  R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.</description>
     </item>
@@ -103,7 +103,7 @@ Follow the following steps:
       
       <guid>/home/</guid>
       <description>My name is Augusta Ada King, Countess of Lovelace (10 December 1815 – 27 November 1852). I wrote the world&amp;rsquo;s first computer program.
-Here are some of my slides</description>
+Here are some of my slides.</description>
     </item>
     
     <item>
