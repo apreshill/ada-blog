@@ -22,7 +22,7 @@ dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 description = "Example blog"
 copyright = "Copyright © 2015 Ada Lovelace"
 # copyrightUrl = "https://creativecommons.org/licenses/by-sa/4.0/"
-logofile = "img/logo.jpg"
+logofile = "img/ada.jpg"
 faviconfile = "img/logo.png"
 highlightjs = true
 progressively = true
@@ -41,7 +41,7 @@ social_banner = "img/banner.png"
 usesmallsummarycard = true
 posts_navigation = true
 # issoHost = "comments.domain.tld:1234"
-# githubRepo = "githubUsername/repositoryName/tree/master"
+githubRepo = "apreshill/ada-blog/tree/master"
 small_banner_logo = false
 
 [params.colors]

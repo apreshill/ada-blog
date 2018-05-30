@@ -37,8 +37,8 @@
       <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>With this theme, it is possible to add small sections that only contains one page like this. It will automatically appears in the header, at the end.
-Along with Ford Prefect, Dent barely escapes the Earth&amp;rsquo;s destruction as it is demolished to make way for a hyperspace bypass. Arthur spends the next several years, still wearing his dressing gown, helplessly launched from crisis to crisis while trying to straighten out his lifestyle.</description>
+      <description>From a Wikipedia article on me:
+I am an English writer. I became the world&amp;rsquo;s first computer programmer. I wrote the program for Charles Babbage&amp;rsquo;s mechanical computer, &amp;ldquo;The Analytical Engine&amp;rdquo;, in 1844. I wrote the first algorithm to be processed by a machine. Between 1842 and 1843, I translated an article by Italian mathematician Luigi Menabrea on the engine. I added my own notes to it. These notes contain what is considered the first computer program, which was an algorithm encoded for processing by a machine.</description>
     </item>
     
     <item>
@@ -102,8 +102,7 @@ Follow the following steps:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/home/</guid>
-      <description>This is the home page. It will display the blog section if there is one, and a text before.
-Hey ! Welcome to the Cocoa Enhanced theme. Here are some articles :</description>
+      <description>My name is Augusta Ada King, Countess of Lovelace (10 December 1815 – 27 November 1852). I wrote the world&amp;rsquo;s first computer program.</description>
     </item>
     
     <item>

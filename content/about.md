@@ -3,10 +3,7 @@ date = "2015-08-22"
 title = "About"
 +++
 
-_With this theme, it is possible to add small sections that only contains one page like this. It will automatically appears in the header, at the end._
+From a [Wikipedia article](https://simple.wikipedia.org/wiki/Ada_Lovelace) on me:
 
-Along with [Ford Prefect](https://en.wikipedia.org/wiki/Ford_Prefect_\(character\)), Dent barely escapes the Earth's destruction as it is demolished to make way for a *hyperspace bypass*. Arthur spends the next several years, still wearing his dressing gown, helplessly launched from crisis to crisis while trying to straighten out his lifestyle.  
- 
-> He rather enjoys tea, but seems to have trouble obtaining it in the far reaches of the galaxy.  
- 
-In time, he learns how to fly and carves a niche for himself as a sandwich-maker.
+I am an English writer. I became the world's first computer programmer. I wrote the program for Charles Babbage's mechanical computer, "The Analytical Engine", in 1844. I wrote the first algorithm to be processed by a machine. Between 1842 and 1843, I translated an article by Italian mathematician Luigi Menabrea on the engine. I added my own notes to it. These notes contain what is considered the first computer program, which was an algorithm encoded for processing by a machine. Though Babbage's engine was never built, my notes are important in the early history of computers. I realized that computers would be able to do more than just calculating or number-crunching. Others, including Babbage himself, worked only on the possibilities of calculating.
+
