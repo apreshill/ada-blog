@@ -1,0 +1,5 @@
+div.header .container .logo {
+  max-width: 100px;
+  margin-left: -2em;
+  border-radius: 50%;
+}
