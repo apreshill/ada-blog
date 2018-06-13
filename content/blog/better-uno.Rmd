@@ -1,0 +1,64 @@
+---
+title: my take a sad plot and make it better- Uno
+author: Alison Hill
+date: '2018-06-13'
+slug: better-uno
+categories:
+  - R
+tags:
+  - ggplot2
+description: Desc
+hacker_news_id: ''
+lobsters_id: ''
+meta_img: /images/image.jpg
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, 
+  comment = NA, dpi = 300,
+  fig.align = "center", out.width = "70%", cache = FALSE)
+```
+
+
+```{r}
+library(tidyverse)
+library(viridis) # colors!
+library(beyonce) # colors!!
+library(extrafont) # fonts!
+```
+
+```{r}
+ratings <- read_csv("http://bit.ly/cs631-ratings",
+                           na = c("", "NA", "N/A"),
+                         col_types = cols(
+                           viewers_7day = col_number(),
+                           series = col_factor(levels = NULL)
+                         )) 
+```
+
+```{r}
+# some small wrangling
+ratings_bonanza1 <- ratings %>% 
+  mutate(ep_id = row_number(),
+         series = as.factor(series)) %>% 
+  select(ep_id, viewers_7day, series)
+
+# my colors from beyonce
+mybey <- beyonce_palette(66)[c(11,10,7,6,5,4,3,1)]
+
+# make the plot
+ggplot(ratings_bonanza1, aes(x = ep_id, y = viewers_7day, 
+                             fill = series)) +
+  geom_col(alpha = .9) +
+  theme_minimal() +
+  ggtitle("Series 8 was a Big Setback in Viewers",
+          subtitle= "7-Day Viewers across All Series/Episodes") +
+  theme(legend.position = "bottom",
+        text = element_text(family = "Lato"),
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.title.x = element_blank()) + 
+  scale_fill_manual(values = mybey) +
+  scale_x_continuous(expand = c(0, 0)) +
+  guides(fill = guide_legend(nrow = 1))
+```

@@ -6,10 +6,19 @@
     <description>Recent content in Blog on Ada Lovelace</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 28 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>my take a sad plot and make it better- Uno</title>
+      <link>/blog/better-uno/</link>
+      <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/better-uno/</guid>
+      <description>library(tidyverse) library(viridis) # colors! library(beyonce) # colors!! library(extrafont) # fonts! ratings &amp;lt;- read_csv(&amp;quot;http://bit.ly/cs631-ratings&amp;quot;, na = c(&amp;quot;&amp;quot;, &amp;quot;NA&amp;quot;, &amp;quot;N/A&amp;quot;), col_types = cols( viewers_7day = col_number(), series = col_factor(levels = NULL) ))  # some small wrangling ratings_bonanza1 &amp;lt;- ratings %&amp;gt;% mutate(ep_id = row_number(), series = as.factor(series)) %&amp;gt;% select(ep_id, viewers_7day, series) # my colors from beyonce mybey &amp;lt;- beyonce_palette(66)[c(11,10,7,6,5,4,3,1)] # make the plot ggplot(ratings_bonanza1, aes(x = ep_id, y = viewers_7day, fill = series)) + geom_col(alpha = .</description>
+    </item>
     
     <item>
       <title>Example article</title>

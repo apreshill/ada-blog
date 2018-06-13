@@ -15,24 +15,24 @@
 <meta property="og:site_name" content="Ada Lovelace" />
 <meta property="og:locale" content="nn_NO" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/example-article/" />
-<meta property="og:title" content="Example article" />
-<meta property="twitter:title" content="Example article">
+<meta property="og:url" content="/blog/better-uno/" />
+<meta property="og:title" content="my take a sad plot and make it better- Uno" />
+<meta property="twitter:title" content="my take a sad plot and make it better- Uno">
 
-    <meta property="og:image" content="/img/banner.png">
+    <meta property="og:image" content="//images/image.jpg">
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:image" content="/img/banner.png">
+    <meta property="twitter:image" content="//images/image.jpg">
 
-<meta property="og:description" content="">
-<meta property="twitter:description" content="">
+<meta property="og:description" content="Desc">
+<meta property="twitter:description" content="Desc">
 
 <title>
 
 
-     Ada Lovelace - Example article 
+     Ada Lovelace - my take a sad plot and make it better- Uno 
 
 </title>
-<link rel="canonical" href="/blog/example-article/">
+<link rel="canonical" href="/blog/better-uno/">
 
 
 <style media="screen">
@@ -1114,27 +1114,33 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                 <div class="title-container">
                     <div class="page-heading">
 
-    Example article
+    my take a sad plot and make it better- Uno
 
 </div>
 
                 </div>
                 <div class="meta">
-                    <div class="date" title="Mon Sep 28 2015 00:00:00 UTC">Sep 28, 2015</div>
+                    <div class="date" title="Wed Jun 13 2018 00:00:00 UTC">Jun 13, 2018</div>
                     
                         
-                        <div class="author middot" title="Alexis Tacnet">Alexis Tacnet</div>
+                        <div class="author middot" title="Alison Hill">Alison Hill</div>
                         
                     
                     <div class="reading-time middot">1 minute read</div>
                     <div class="tags">
                         <ul>
                           
+                            <li class="middot"><a href="/tags/ggplot2">ggplot2</a> </li>
+                          
                         </ul>
                     </div>
                     <div class="tags">
                         <ul>
                           
+                            
+                          
+                          
+                            
                           
                         </ul>
                     </div>
@@ -1143,34 +1149,41 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
             <div class="markdown">
                 
     
-    
+    <pre class="r"><code>library(tidyverse)
+library(viridis) # colors!
+library(beyonce) # colors!!
+library(extrafont) # fonts!</code></pre>
+<pre class="r"><code>ratings &lt;- read_csv(&quot;http://bit.ly/cs631-ratings&quot;,
+                           na = c(&quot;&quot;, &quot;NA&quot;, &quot;N/A&quot;),
+                         col_types = cols(
+                           viewers_7day = col_number(),
+                           series = col_factor(levels = NULL)
+                         )) </code></pre>
+<pre class="r"><code># some small wrangling
+ratings_bonanza1 &lt;- ratings %&gt;% 
+  mutate(ep_id = row_number(),
+         series = as.factor(series)) %&gt;% 
+  select(ep_id, viewers_7day, series)
 
-<h2 id="text">Text</h2>
+# my colors from beyonce
+mybey &lt;- beyonce_palette(66)[c(11,10,7,6,5,4,3,1)]
 
-<p><strong>This is some text.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium at ipsum eu pharetra. Proin ac ante et leo ultrices bibendum. Vivamus id ipsum fermentum, aliquam nunc mollis, tempus sapien. Praesent scelerisque cursus eros vitae pretium. Etiam sit amet ligula in leo euismod malesuada. Proin eleifend pulvinar ipsum, eu lobortis ante pharetra eu. Vivamus sem elit, venenatis eget ornare nec, ullamcorper non tellus. Duis quis massa finibus, euismod erat quis, fermentum nunc. Maecenas euismod felis sit amet convallis placerat.</p>
-
-<h2 id="images">Images</h2>
-
-<p><strong>This theme includes a tranparent way to defer images. This can be enabled/disabled in the <code>config.toml</code>.</strong></p>
-
-<p><figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="/img/startup.jpg" src="/img/low/startup.jpg" alt="image" /></p></figure>
-
-<p><strong>You will just have to do two images : the normal, and a low resolution one.</strong></p>
-
-<h2 id="code">Code</h2>
-
-<p><strong>This is some code, this theme includes language highlight, optionnal as well.</strong></p>
-
-<pre><code>.dark {
-  color: #333333 !important;
-}
-.light {
-  color: #666666 !important;
-}
-.accent {
-  color: #428bca !important;
-}
-</code></pre>
+# make the plot
+ggplot(ratings_bonanza1, aes(x = ep_id, y = viewers_7day, 
+                             fill = series)) +
+  geom_col(alpha = .9) +
+  theme_minimal() +
+  ggtitle(&quot;Series 8 was a Big Setback in Viewers&quot;,
+          subtitle= &quot;7-Day Viewers across All Series/Episodes&quot;) +
+  theme(legend.position = &quot;bottom&quot;,
+        text = element_text(family = &quot;Lato&quot;),
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.title.x = element_blank()) + 
+  scale_fill_manual(values = mybey) +
+  scale_x_continuous(expand = c(0, 0)) +
+  guides(fill = guide_legend(nrow = 1))</code></pre>
+<p><img src="/blog/better-uno_files/figure-html/unnamed-chunk-4-1.png" width="70%" style="display: block; margin: auto;" /></p>
 
 
                 <br>
@@ -1196,15 +1209,10 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                     
                     <div>
                         <img class="icon" src="/img/back.svg" alt="back" />
-                        <a href="/blog/hello-r-markdown/">Hello R Markdown</a>
+                        <a href="/blog/example-article/">Example article</a>
                     </div>
                     
                     <div style="width: 100%;"></div>
-                    
-                    <div>
-                        <a href="/blog/better-uno/">my take a sad plot and make it better- Uno</a>
-                        <img class="icon" src="/img/next.svg" alt="next" />
-                    </div>
                     
                 </div>
             
@@ -1224,7 +1232,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
             <div class="copyright">
             
             
-                <a href="https://github.com/apreshill/ada-blog/tree/master/content/blog/example-of-an-article.md" target="_blank">View this post on GitHub</a>
+                <a href="https://github.com/apreshill/ada-blog/tree/master/content/blog/better-uno.html" target="_blank">View this post on GitHub</a>
             
             </div>
         

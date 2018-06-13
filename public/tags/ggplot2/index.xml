@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Ada Lovelace</title>
-    <link>/categories/r/</link>
-    <description>Recent content in R on Ada Lovelace</description>
+    <title>Ggplot2 on Ada Lovelace</title>
+    <link>/tags/ggplot2/</link>
+    <description>Recent content in Ggplot2 on Ada Lovelace</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 13 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/ggplot2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,17 +18,6 @@
       
       <guid>/blog/better-uno/</guid>
       <description>library(tidyverse) library(viridis) # colors! library(beyonce) # colors!! library(extrafont) # fonts! ratings &amp;lt;- read_csv(&amp;quot;http://bit.ly/cs631-ratings&amp;quot;, na = c(&amp;quot;&amp;quot;, &amp;quot;NA&amp;quot;, &amp;quot;N/A&amp;quot;), col_types = cols( viewers_7day = col_number(), series = col_factor(levels = NULL) ))  # some small wrangling ratings_bonanza1 &amp;lt;- ratings %&amp;gt;% mutate(ep_id = row_number(), series = as.factor(series)) %&amp;gt;% select(ep_id, viewers_7day, series) # my colors from beyonce mybey &amp;lt;- beyonce_palette(66)[c(11,10,7,6,5,4,3,1)] # make the plot ggplot(ratings_bonanza1, aes(x = ep_id, y = viewers_7day, fill = series)) + geom_col(alpha = .</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/blog/hello-r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/blog/hello-r-markdown/</guid>
-      <description>knitr::include_url(&amp;quot;../../slides/slides.html&amp;quot;)  R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.</description>
     </item>
     
   </channel>
