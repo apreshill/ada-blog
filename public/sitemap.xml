@@ -94,4 +94,8 @@
     <priority>0</priority>
   </url>
   
+  <url>
+    <loc>/projects/test-project/</loc>
+  </url>
+  
 </urlset>

@@ -1,0 +1,10 @@
+---
+title: "test-project"
+author: "Alison Hill"
+date: "June 13, 2018"
+output: html_document
+---
+
+```{r}
+knitr::include_url("../../slides/slides.html")
+```

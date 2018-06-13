@@ -20,5 +20,14 @@
       <description>Here is my final project Data Visualization slide deck. Enjoy!</description>
     </item>
     
+    <item>
+      <title>test-project</title>
+      <link>/projects/test-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/test-project/</guid>
+      <description>knitr::include_url(&amp;quot;../../slides/slides.html&amp;quot;)  </description>
+    </item>
+    
   </channel>
 </rss>
