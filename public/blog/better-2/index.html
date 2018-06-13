@@ -15,24 +15,24 @@
 <meta property="og:site_name" content="Ada Lovelace" />
 <meta property="og:locale" content="nn_NO" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/hello-r-markdown/" />
-<meta property="og:title" content="Hello R Markdown" />
-<meta property="twitter:title" content="Hello R Markdown">
+<meta property="og:url" content="/blog/better-2/" />
+<meta property="og:title" content="take a sad plot and make it better- take 2" />
+<meta property="twitter:title" content="take a sad plot and make it better- take 2">
 
-    <meta property="og:image" content="/img/banner.png">
+    <meta property="og:image" content="//images/image.jpg">
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:image" content="/img/banner.png">
+    <meta property="twitter:image" content="//images/image.jpg">
 
-<meta property="og:description" content="">
-<meta property="twitter:description" content="">
+<meta property="og:description" content="Desc">
+<meta property="twitter:description" content="Desc">
 
 <title>
 
 
-     Ada Lovelace - Hello R Markdown 
+     Ada Lovelace - take a sad plot and make it better- take 2 
 
 </title>
-<link rel="canonical" href="/blog/hello-r-markdown/">
+<link rel="canonical" href="/blog/better-2/">
 
 
 <style media="screen">
@@ -1114,33 +1114,31 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                 <div class="title-container">
                     <div class="page-heading">
 
-    Hello R Markdown
+    take a sad plot and make it better- take 2
 
 </div>
 
                 </div>
                 <div class="meta">
-                    <div class="date" title="Thu Jul 23 2015 21:13:14 -0500">Jul 23, 2015</div>
+                    <div class="date" title="Wed Jun 13 2018 00:00:00 UTC">Jun 13, 2018</div>
                     
                         
-                        <div class="author middot" title="Frida Gomam">Frida Gomam</div>
+                        <div class="author middot" title="Alison Hill">Alison Hill</div>
                         
                     
                     <div class="reading-time middot">1 minute read</div>
                     <div class="tags">
                         <ul>
                           
-                            <li class="middot"><a href="/tags/r-markdown">R Markdown</a> </li>
-                          
-                            <li class="middot"><a href="/tags/plot">plot</a> </li>
-                          
-                            <li class="middot"><a href="/tags/regression">regression</a> </li>
-                          
                         </ul>
                     </div>
                     <div class="tags">
                         <ul>
                           
+                            
+                          
+                          
+                            
                           
                         </ul>
                     </div>
@@ -1149,46 +1147,46 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
             <div class="markdown">
                 
     
-    <pre class="r"><code>knitr::include_url(&quot;../../slides/slides.html&quot;)</code></pre>
-<iframe src="../../slides/slides.html" width="672" height="400px">
-</iframe>
-<div id="r-markdown" class="section level1">
-<h1>R Markdown</h1>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>You can embed an R code chunk like this:</p>
-<pre class="r"><code>summary(cars)</code></pre>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
-<pre class="r"><code>fit &lt;- lm(dist ~ speed, data = cars)
-fit</code></pre>
-<pre><code>## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932</code></pre>
+    <div id="packages" class="section level1">
+<h1>Packages</h1>
+<pre class="r"><code>library(tidyverse)
+library(viridis) # colors!
+library(beyonce) # colors!!
+library(extrafont) # fonts!</code></pre>
 </div>
-<div id="including-plots" class="section level1">
-<h1>Including Plots</h1>
-<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
-<pre class="r"><code>par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
-  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
-  init.angle = -50, border = NA
-)</code></pre>
-<div class="figure"><span id="fig:pie"></span>
-<figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="/blog/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png" src="/blog/2015-07-23-r-rmarkdown_files/figure-html/low/pie-1.png" alt="A fancy pie chart." width="672" /></figure>
-<p class="caption">
-Figure 1: A fancy pie chart.
-</p>
+<div id="the-data" class="section level1">
+<h1>The data</h1>
+<p>Here I read in a local data file using this advice: <a href="https://blogdown-demo.rbind.io/2018/02/27/r-file-paths/#place-file-in-your-staticdata-folder" class="uri">https://blogdown-demo.rbind.io/2018/02/27/r-file-paths/#place-file-in-your-staticdata-folder</a></p>
+<pre class="r"><code>ratings &lt;- read_csv(here::here(&quot;static&quot;, &quot;data&quot;, &quot;episodes.csv&quot;),
+                           na = c(&quot;&quot;, &quot;NA&quot;, &quot;N/A&quot;),
+                         col_types = cols(
+                           viewers_7day = col_number(),
+                           series = col_factor(levels = NULL)
+                         )) </code></pre>
+<div id="recipe-2-lollipop-plot" class="section level2">
+<h2>Recipe 2: Lollipop Plot</h2>
+<pre class="r"><code>ratings_bonanza2 &lt;- ratings %&gt;% 
+  group_by(series) %&gt;% 
+  mutate(series_avg = mean(viewers_7day, na.rm = TRUE),
+         diff_avg = viewers_7day - series_avg)%&gt;% 
+  filter(max(episode) == 10) %&gt;% 
+  mutate(episode = as.factor(episode)) %&gt;% 
+  select(episode, viewers_7day, series, diff_avg, series_avg)
+
+ggplot(ratings_bonanza2, aes(x = episode, 
+                            y = viewers_7day,
+                            color = diff_avg)) +
+  geom_hline(aes(yintercept = series_avg), alpha = .5) +
+  geom_point() +
+  geom_segment(aes(xend = episode, yend = series_avg)) +
+  facet_wrap(~series) +
+  scale_color_viridis(option=&quot;plasma&quot;, begin = 0, 
+                      end = .8, guide = FALSE) +
+  theme_minimal() +
+  theme(text = element_text(family = &quot;Lato&quot;)) +
+  ggtitle(&quot;Great British Bake Off Finales Get the Most Viewers&quot;,
+          subtitle = &quot;Way Higher than Series Average (for Series with 10 episodes)&quot;)</code></pre>
+<p><img src="/blog/better-2_files/figure-html/unnamed-chunk-4-1.png" width="70%" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 
@@ -1214,10 +1212,15 @@ Figure 1: A fancy pie chart.
             
                 <div class="navigation">
                     
+                    <div>
+                        <img class="icon" src="/img/back.svg" alt="back" />
+                        <a href="/blog/hello-r-markdown/">Hello R Markdown</a>
+                    </div>
+                    
                     <div style="width: 100%;"></div>
                     
                     <div>
-                        <a href="/blog/better-2/">take a sad plot and make it better- take 2</a>
+                        <a href="/blog/better-uno/">my take a sad plot and make it better- Uno</a>
                         <img class="icon" src="/img/next.svg" alt="next" />
                     </div>
                     
@@ -1239,7 +1242,7 @@ Figure 1: A fancy pie chart.
             <div class="copyright">
             
             
-                <a href="https://github.com/apreshill/ada-blog/tree/master/content/blog/2015-07-23-r-rmarkdown.html" target="_blank">View this post on GitHub</a>
+                <a href="https://github.com/apreshill/ada-blog/tree/master/content/blog/better-2.html" target="_blank">View this post on GitHub</a>
             
             </div>
         
