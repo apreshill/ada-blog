@@ -4,4 +4,4 @@ title = "Projects"
 +++
 
 Here is my final project Data Visualization 
-[slide deck](slides/slides.html). Enjoy!
+[slide deck](../slides/slides.html). Enjoy!
