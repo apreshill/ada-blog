@@ -1,17 +1,15 @@
-baseurl = "https://ada-lovelace.netlify.com"
-theme = "cocoa-eh-hugo-theme"
+baseurl = "https://example.com/"
+theme = "cocoa-eh"
 builddrafts = true
 canonifyurls = true
 contentdir = "content"
 languageCode = "en-US"
 layoutdir = "layouts"
 publishdir = "public"
-author = "Ada Lovelace"
-title = "Ada Lovelace"
+author = "Alexis Tacnet"
+title = "Cocoa Enhanced"
 disqusshortname = ""
 pluralizelisttitles = false
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-enableEmoji = true
 
 [permalinks]
 blog = "blog/:slug/"
@@ -20,14 +18,13 @@ blog = "blog/:slug/"
 dateform = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 description = "Example blog"
-copyright = "Copyright © 2015 Ada Lovelace"
+copyright = "Copyright © 2015 Nishanth Shanmugham"
 # copyrightUrl = "https://creativecommons.org/licenses/by-sa/4.0/"
-logofile = "img/ada.jpg"
+logofile = "img/logo.png"
 faviconfile = "img/logo.png"
 highlightjs = true
 progressively = true
 share = true
-extracssfiles = [ "/css/circle.css" ]  # In your `static` directory, add/remove files as necessary.
 # Share to googleplus, twitter, fb, linkedin by default
 # disable by setting share_on_<social network> = false
 # example: share_on_googleplus = false
@@ -37,11 +34,13 @@ email = "you@example.com"
 linkedin = "john-example-aa80ue8è"
 twitter = "example"
 facebook = "facebook_id"
+instagram = "instagram_id"
+itch_io = "itch_io_id"
 social_banner = "img/banner.png"
 usesmallsummarycard = true
 posts_navigation = true
 # issoHost = "comments.domain.tld:1234"
-githubRepo = "apreshill/ada-blog/tree/master"
+# githubRepo = "githubUsername/repositoryName/tree/master"
 small_banner_logo = false
 
 [params.colors]

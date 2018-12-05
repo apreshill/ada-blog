@@ -2,7 +2,6 @@
 title = "Home"
 +++
 
-My name is Augusta Ada King, Countess of Lovelace (10 December 1815 – 27 November 1852). I wrote the world's first computer program.
+_This is the home page. It will display the blog section if there is one, and a text before._
 
-Here are some of my [slides](slides/slides.html).
-
+Hey ! Welcome to the **Cocoa Enhanced theme**. Here are some articles :
