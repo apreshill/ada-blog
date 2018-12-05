@@ -88,7 +88,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/test-project/</guid>
-      <description>knitr::include_url(&amp;quot;../../slides/slides.html&amp;quot;)  </description>
+      <description> knitr::include_url(&amp;quot;../../slides/slides.html&amp;quot;)  </description>
     </item>
     
   </channel>
