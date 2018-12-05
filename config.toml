@@ -1,4 +1,4 @@
-baseurl = "https://ada-lovelace.netlify.com"
+baseurl = "https://ada-lovelace.netlify.com/"
 theme = "cocoa-eh"
 builddrafts = true
 canonifyurls = true
