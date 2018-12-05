@@ -9,4 +9,3 @@
   
 [context.branch-deploy.environment]
   HUGO_VERSION = "0.52"
-  
