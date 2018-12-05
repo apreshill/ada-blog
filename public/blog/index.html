@@ -6,14 +6,13 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer">
 <meta name="description" content="Example blog">
 
 
     <meta property="twitter:site" content="@example">
 
 <meta property="og:site_name" content="Ada Lovelace" />
-<meta property="og:locale" content="nn_NO" />
+<meta property="og:locale" content="en-US" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog/" />
 <meta property="og:title" content="Blog" />
@@ -195,7 +194,9 @@ div.header .content {
   align-items: center;
 }
 div.header .container .logo {
+  
   max-width: 100px;
+  
   margin-left: -2em;
 }
 div.header .name {
@@ -317,7 +318,8 @@ div.main .content .title-container {
   justify-content: space-between;
 }
 div.main .content .posts {
-  margin-bottom: 4em;
+  
+  
 }
 div.main .content .page-heading {
   font-size: 20px;
@@ -789,11 +791,15 @@ section {
 padding: 0 16px;
 margin-left: 100px;
 margin-right: 100px;
+
 max-width: 750px;
+
 }
 div.column {
 padding: 0 16px;
+
 max-width: 750px;
+
 }
 div.header {
 background-color: transparent;
@@ -808,8 +814,8 @@ div.header .container .logo {
 margin: 0;
 }
 div.header-home .container .logo {
-max-width: 180px;
-margin-left: 20px;
+max-width: 216px;
+margin-left: 24px;
 }
 div.header-home .name-home {
 padding-top: 30px;
@@ -894,11 +900,16 @@ padding-top: 60px;
 padding-bottom: 60px;
 }
 div.footer {
-padding-top: 30px;
+padding-top: 60px;
 padding-bottom: 60px;
 }
 div.main {
 padding-top: 0;
+}
+div.main .content {
+  
+  font-size: 16px;
+  
 }
 div.main .container .content .post-item {
 display: flex;
@@ -907,10 +918,6 @@ padding-left: 1.5em;
 }
 div.main .container .content .post-item .meta {
 display: block;
-}
-div.main.post {
-padding-top: 60px;
-padding-bottom: 60px;
 }
 div.main .content .markdown blockquote {
 padding-right: 5rem;
@@ -1078,7 +1085,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
             <nav>
                 <ul>
                     
-                        <li><a href="/blog/">Blog</a></li>
+                            <li><a href="/blog/">Blog</a></li>
                     
                     
                         
@@ -1117,13 +1124,17 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                         
                             <li class="post-item">
     <span class="meta">Jun 13, 2018</span>
+    
     <a href="/blog/better-2/"><span>take a sad plot and make it better- take 2</span></a>
+    
 </li>
 
                         
                             <li class="post-item">
     <span class="meta">Jun 13, 2018</span>
+    
     <a href="/blog/better-uno/"><span>my take a sad plot and make it better- Uno</span></a>
+    
 </li>
 
                         
@@ -1132,7 +1143,9 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                         
                             <li class="post-item">
     <span class="meta">Jul 23, 2015</span>
+    
     <a href="/blog/hello-r-markdown/"><span>Hello R Markdown</span></a>
+    
 </li>
 
                         
@@ -1170,27 +1183,33 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
         
 
         
-            <a href="https://facebook.com/facebook_id" target="_blank">
+
+        
+
+        
+            <a href="https://facebook.com/facebook_id" rel=me target="_blank">
                 <img class="icon" src="/img/facebook.svg" alt="facebook" />
             </a>
         
 
         
-            <a href="https://github.com/example" target="_blank">
+            <a href="https://github.com/example" rel=me target="_blank">
                 <img class="icon" src="/img/github.svg" alt="github" />
             </a>
         
 
         
-            <a href="https://twitter.com/example" target="_blank">
+            <a href="https://twitter.com/example" rel=me target="_blank">
                 <img class="icon" src="/img/twitter.svg" alt="twitter" />
             </a>
         
 
         
-            <a href="https://www.linkedin.com/in/john-example-aa80ue8%c3%a8" target="_blank">
+            <a href="https://www.linkedin.com/in/john-example-aa80ue8%c3%a8" rel=me target="_blank">
                 <img class="icon" src="/img/linkedin.svg" alt="linkedin" />
             </a>
+        
+
         
 
         
@@ -1231,6 +1250,8 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
   <script src="/js/social-share-kit.min.js" defer></script>
+
+
 
 
 
