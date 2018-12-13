@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Title</title>
+    <link>/portfolio/</link>
+    <description>Recent content in Projects on Title</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 21 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DERA</title>
+      <link>/portfolio/dera/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/dera/</guid>
+      <description>This is a Java reference implementation of dynamic event-driven actors runtime aiming at providing adequate abstraction levels and mechanisms for modelling and developing (distributed) event-based systems. DERA leverages the intrinsic loose coupling of event-driven communication styles to support various kinds of run-time evolution and adaptation (i.e., enabling run-time flexibility) while minimizing the non-deterministic nature of traditional event-based applications (i.e., supporting formal analysis).</description>
+    </item>
+    
+    <item>
+      <title>hyde-hyde</title>
+      <link>/portfolio/hyde-hyde/</link>
+      <pubDate>Sat, 27 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/hyde-hyde/</guid>
+      <description>Hyde-hyde is a responsive Hugo theme inspired by @spf13&amp;rsquo;s Hyde and its variant Nate Finch&amp;rsquo;s blog. It was heavily restructured with modularised page layouts for easier maintenance and modification. Hyde-hyde offers awesome features such as nice colour tone, code highlighting, Font-Awesome 5&amp;rsquo;s sidebar icons), a cool portfolio page, more choices for commenting (e.g. GraphComment, Disqus).</description>
+    </item>
+    
+    <item>
+      <title>LaraMod</title>
+      <link>/portfolio/laramod/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/laramod/</guid>
+      <description>LaraMod is another modularisation effort to systematically organising a Laravel based project. The idea stems from my struggle to structure a Laravel-based project so that I can work effectively on individual modules whilst keeping Laravel codebase intact as much as possible and also keeping the project&amp;rsquo;s codebase separate from Laravel.</description>
+    </item>
+    
+  </channel>
+</rss>
