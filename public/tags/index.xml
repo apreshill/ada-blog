@@ -1,76 +1,58 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Cocoa Enhanced</title>
+    <title>Tags on Introduction</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Cocoa Enhanced</description>
+    <description>Recent content in Tags on Introduction</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Nov 2017 12:04:06 -0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Development</title>
-      <link>/tags/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Code</title>
+      <link>/tags/code/</link>
+      <pubDate>Mon, 06 Nov 2017 12:04:06 -0500</pubDate>
       
-      <guid>/tags/development/</guid>
+      <guid>/tags/code/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Go</title>
-      <link>/tags/go/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Coffee</title>
+      <link>/tags/coffee/</link>
+      <pubDate>Wed, 01 Nov 2017 12:04:16 -0500</pubDate>
       
-      <guid>/tags/go/</guid>
+      <guid>/tags/coffee/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>/tags/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Images</title>
+      <link>/tags/images/</link>
+      <pubDate>Wed, 01 Nov 2017 12:04:16 -0500</pubDate>
       
-      <guid>/tags/golang/</guid>
+      <guid>/tags/images/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hugo</title>
-      <link>/tags/hugo/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Ipsum</title>
+      <link>/tags/ipsum/</link>
+      <pubDate>Mon, 13 Nov 2017 11:58:39 -0500</pubDate>
       
-      <guid>/tags/hugo/</guid>
+      <guid>/tags/ipsum/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Projects</title>
-      <link>/tags/projects/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <title>Words</title>
+      <link>/tags/words/</link>
+      <pubDate>Mon, 13 Nov 2017 11:58:39 -0500</pubDate>
       
-      <guid>/tags/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Templates</title>
-      <link>/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Themes</title>
-      <link>/tags/themes/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/themes/</guid>
+      <guid>/tags/words/</guid>
       <description></description>
     </item>
     
