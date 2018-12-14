@@ -1,6 +1,6 @@
 ---
-title: "Hi, I'm Introduction"
+title: "Ada Lovelace"
 headless: true
 ---
 
-I'm a theme for Hugo
+
