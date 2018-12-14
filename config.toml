@@ -1,5 +1,5 @@
 ## Basic Configuration
-baseurl = "/"
+baseurl = "https://example.com/"
 languageCode = "en"
 
 title = "Title"
@@ -19,7 +19,7 @@ theme = "hyde-hyde"
     author = "Author"
     title = "Title"
     # description = "..."
-    authorimage = "/img/hugo.png"
+    authorimage = "/img/ada_square.jpg"
     dateformat = "Jan 2, 2006"
 
     # sidebar, copyright & license
