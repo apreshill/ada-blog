@@ -3,6 +3,7 @@ theme = "hugo-theme-introduction"
 DefaultContentLanguage           = "en"                    # Default language for multilingual sites
 # disqusshortname                 = ""                       # https://gohugo.io/content-management/comments
 # googleAnalytics                 = ""                       # https://gohugo.io/templates/internal/#google-analytics
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
     themeStyle                   = "light"                 # Choose "light" or "dark"
@@ -12,7 +13,7 @@ DefaultContentLanguage           = "en"                    # Default language fo
     fadeInIndex                  = false                   # Turn on/off the fade-in effect on the index page even if fade-in was otherwise turned off
     dateFormat                   = "Jan 2, 2006"
     email                        = "youremail@email.com"   # E-mail address for contact section
-    # customCSS                    = ["foo.css"]             # Include custom css files placed under assets/
+    #customCSS                    = "custom-style.css"      # Include custom css files placed under assets/
 
     # Configure the home page
     [params.home]
@@ -36,14 +37,17 @@ DefaultContentLanguage           = "en"                    # Default language fo
     # Social icons appear in introduction and contact section. Add as many more as you like.
     # Find icon names here: https://fontawesome.com/cheatsheet/
     [[params.social]]
-        url   = "https://twitter.com/"
+        url   = "https://twitter.com/hashtag/adalovelace"
         icon  = "twitter"
     [[params.social]]
-        url   = "https://facebook.com/"
-        icon  = "facebook-f"
+        url   = "https://octodex.github.com/mona-lovelace"
+        icon  = "github"
     [[params.social]]
-        url   = "https://linkedin.com/"
-        icon  = "linkedin-in"
+        url   = "https://github.com/apreshill/ada-blog"
+        icon  = "r-project"
+    [[params.social]]
+        url   = "https://en.wikipedia.org/wiki/Ada_Lovelace"
+        icon  = "wikipedia-w"
 
 # If you don't want to use the default menu, you can define one by yourself
 # [[menu.main]]
@@ -66,9 +70,9 @@ DefaultContentLanguage           = "en"                    # Default language fo
         languageCode     = "en-us"
         contentDir       = "content/en"
         weight           = 0
-        title            = "Introduction"
+        title            = "Ada Lovelace"
         [languages.en.params]
-            description  = "Website Description"   # Max 160 characters show in search results
+            description  = "A blog for Ada"   # Max 160 characters show in search results
             # footerText   = ""                      # Text to override default footer text (markdown allowed)
 
     [languages.es]
