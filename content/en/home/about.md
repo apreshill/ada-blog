@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: "profile.jpg"
+image: "Ada_Lovelace_portrait.jpg"
 weight: 0
 ---
 
