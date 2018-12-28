@@ -2,7 +2,7 @@
 baseurl = "https://example.com/"
 languageCode = "en"
 
-title = "Title"
+title = "Ada"
 theme = "hyde-hyde"
 
 ## Hugo Built-in Features
@@ -16,11 +16,12 @@ theme = "hyde-hyde"
 
 ## Site Settings
 [params]
-    author = "Author"
-    title = "Title"
+    author = "Augusta Ada King"
+    title = "Countess of Lovelace"
     # description = "..."
     authorimage = "/img/ada_square.jpg"
     dateformat = "Jan 2, 2006"
+    custom_css = ["css/foo.css", "css/bar.css"] # relative to static
 
     # sidebar, copyright & license
     copyright = "htr3n"
@@ -43,15 +44,15 @@ theme = "hyde-hyde"
 
 ## Social Accounts
 [params.social]
-    github = "<username>"
-    instagram = "<username>"
-    xing = "<username>"
-    linkedin = "<username>"
-    twitter = "<username>"
-    facebook = "<username>"
-    stackoverflow = "<username>"
-    telegram = "<username>"
-    email = "your-email@example.com"
+    github = "https://octodex.github.com/mona-lovelace"
+    #instagram = "<username>"
+    #xing = "<username>"
+    #linkedin = "<username>"
+    twitter = "findingada"
+    #facebook = "<username>"
+    #stackoverflow = "<username>"
+    #telegram = "<username>"
+    #email = "your-email@example.com"
     # gravatar = "your-email@example.com"
 
 ## Main Menu
