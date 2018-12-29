@@ -1,6 +1,13 @@
 # ada-blog
 Demo site for teaching blogdown using several Hugo themes
 
+# Future Imperfect
+
+- hugo: https://themes.gohugo.io/future-imperfect/
+- demo: https://themes.gohugo.io//theme/future-imperfect/blog/
+- github: https://github.com/jpescador/hugo-future-imperfect
+- ada: https://5c26bb97b7ecd10008a6db06--ada-lovelace.netlify.com/
+
 # Cocoa Enhanced
 
 - hugo: https://themes.gohugo.io/cocoa-eh-hugo-theme/
