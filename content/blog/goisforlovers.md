@@ -1,16 +1,16 @@
-+++
-author = "Unknown Author"
-categories = ["Go"]
-date = "2014-04-02"
-description = ""
-featured = "pic02.jpg"
-featuredalt = "Pic 2"
-featuredpath = "date"
-linktitle = ""
-title = "(Hu)go Template Primer"
-type = "post"
-
-+++
+---
+author: Unknown Author
+categories:
+- Go
+date: "2014-04-02"
+description: ""
+featured: pic02.jpg
+featuredalt: Pic 2
+featuredpath: date
+linktitle: ""
+title: (Hu)go Template Primer
+type: post
+---
 
 Hugo uses the excellent [go][] [html/template][gohtmltemplate] library for
 its template engine. It is an extremely lightweight engine that provides a very

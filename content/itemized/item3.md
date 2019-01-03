@@ -1,16 +1,17 @@
-+++
-type = "itemized"
-author = "George Jetson"
-date = "2017-06-22"
-title = "Fancy App 3"
-description = "Application for doing cool things."
-featured = ""
-featuredpath = ""
-featuredalt = ""
-categories = [""]
-linktitle = ""
-format = "Android"
-link = "#"
-+++
+---
+author: George Jetson
+categories:
+- ""
+date: "2017-06-22"
+description: Application for doing cool things.
+featured: ""
+featuredalt: ""
+featuredpath: ""
+format: Android
+link: '#'
+linktitle: ""
+title: Fancy App 3
+type: itemized
+---
 
 ## App 3
